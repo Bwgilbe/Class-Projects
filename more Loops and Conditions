@@ -1,0 +1,25 @@
+def number(var):
+    while True:
+       try:
+            _number = int(input(f"Please write a number for your {var}.\n"))
+            if _number > 0 and _number <= 10:
+                break
+            else:
+                print(f"Please write a number between 1 and 10")
+       except ValueError:
+           print(f"Please write a number between 1 and 10")
+    return _number
+
+def test_secret():
+    while True:
+        guess = number("guess")
+        if secret == guess:
+            print("YOU GUEST IT!!!!")
+            break
+        if guess < secret:
+            print("Your guess is too low.")
+        elif guess > secret:
+            print("Your guess is too high.")
+secret = number("secret")
+
+test_secret()
