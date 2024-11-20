@@ -1,0 +1,37 @@
+Auto boxing __________________________________
+
+public class autoboxing {
+
+    
+    public static void myMethod(Integer num){
+            System.out.println(num);
+    }// end myMethod
+    
+    public static void main(String[] args) {
+    myMethod(15);   
+        
+
+   }// end main 
+    
+}//end class
+
+Unboxing __________________________________________
+
+
+public class unboxing {
+
+    public static void myMethod(int num){
+            System.out.println(num);
+    }// end myMethod
+    
+    public static void main(String[] args) {
+        Integer inum = new Integer(15);
+        myMethod(inum);
+        
+        
+        
+        
+        
+    }// end main 
+    
+}//end class
