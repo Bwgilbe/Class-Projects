@@ -1,0 +1,28 @@
+from threading import Timer
+from datetime import datetime
+from random import randrange
+import multiprocessing
+
+
+
+def display():
+
+
+    now = datetime.now()
+
+    current_time = now.strftime("%H:%M:%S")
+    print(current_time)
+
+n = randrange(2)
+
+t = Timer(n, display)
+start_timer = t.start()
+if __name__ == "__main__":
+
+
+        p = multiprocessing.Process(target=start_timer, args=("",))
+        p1 = multiprocessing.Process(target=start_timer, args=("",))
+        p2 = multiprocessing.Process(target=start_timer, args=("",))
+        p.start()
+        p1.start()
+        p2.start()
