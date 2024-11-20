@@ -1,0 +1,28 @@
+for i in range(3,-1,-1):
+    print(i)
+
+my_guess = 7
+number = 1
+
+while True:
+    if my_guess > number:
+        print("number is too low")
+        number +=1
+    elif my_guess < number:
+        print("number is too high")
+        number-=1
+    else:
+        print("You Have the right number")
+        break
+
+my__guess =5
+
+for _number in range(10):
+    if _number < my__guess:
+        print("too low")
+    elif _number > my__guess:
+        print("oops")
+        break
+    else:
+        print("found it")
+        break
